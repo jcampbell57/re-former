@@ -28,12 +28,5 @@
 
 -->
 
-<%= form_with model: @post do |form| %>
-  <%= form.label :username, 'Handle' %>
-  <%= form.text_field :username %>
-  <%= form.label :email %>
-  <%= form.email_field :email, placeholder: 'email@example.com' %>
-  <%= form.label :password %>
-  <%= form.password_field :password, placeholder: '******' %>
-  <%= form.submit %>
-<% end %>
+<h2>New User</h2>
+<%= render partial: "form" %>
